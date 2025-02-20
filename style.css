@@ -134,6 +134,18 @@ ul {
     margin: 20px 0;
 }
 
+li {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+li + li {
+    margin-top: 5px;
+}
+
 .result-list {
     margin-top: 15px;
     color: #05DF05;
@@ -159,4 +171,23 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+/* teste do botão de remover */
+.botao-remover {
+    background-color: var(--color-button);
+    border: 2px solid #cc0000;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao-remover:hover {
+    background-color: var(--color-button-hover);
+    color: black;
+    transform: scale(1.1);
 }
